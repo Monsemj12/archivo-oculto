@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
- <head><title>ARCHIVO OCUTO</title>
+ <head><title>ARCHIVO OCULTO</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../css/style.css">
@@ -43,11 +43,12 @@
 
             <section>
                 <h2>Crimenes Reales</h2>
-                <h3>El planeta más caliente</h3>
+                <h3>Casos que estremecen, 
+                    secretos ocultos y crímenes que 
+                    dejaron huella en la historia.</h3>
 
                 <p>
-                    Su densa atmósfera de CO₂ atrapa el calor.
-                    Bajo sus nubes, la superficie alcanza unos 465 °C.
+                    ¿Te atreves a descubrir la verdad detrás de los casos más impactantes?
                 </p>
                 <a href="crimenes.html">Ver más</a>
             </section>
@@ -58,17 +59,44 @@
 
             <section>
                 <h2>Historias y Tragedias</h2>
-                <h3>Nuestro punto azul</h3>
+                <h3>Relatos de sucesos impactantes, destinos inesperados 
+                    y acontecimientos que marcaron la vida de muchas personas.</h3>
 
                 <p>
-                    Océanos, una atmósfera protectora y vida.
-                    Es el único mundo donde sabemos que existe.
+                   ¿Estás listo para conocer las historias que dejaron huella en el mundo?
                 </p>
                  <a href="historiaytragedias.html">Ver más</a>
             </section>
         </div>
 
 </main>
+<section class="formulario">
+    <h2>Quisieras que algun caso en especifico este en Archivo Oculto</h2>
+    <p> 
+        Si quieres recomendarnos algun tema sobre casos criminales, historia, leyendas etc;<br>
+        Envianos tu caso para investigar a profundidad sobre el y agregarlo a Archivos Ocultos
+    </p>
+
+    <form>
+        <label for="nombre">Nombre o apodo</label>
+        <input type="text" id="nombre" name="nombre"
+               placeholder="Ingresa tu nombre" required>
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo"
+               placeholder="ejemplo@correo.com" required>
+
+        <label for="descripcion">Cuéntanos sobre la historia</label>
+        <textarea id="descripcion" name="descripcion"
+                  placeholder="Describe el caso o tema que te gustaría ver..."
+                  required></textarea>
+
+        <div id="mensaje"></div>
+        <button type="submit">Enviar sugerencia</button>
+
+    </form>
+</section>
+
+ <script src="../js/script.js"></script>
     </body>
-    
 </html>
